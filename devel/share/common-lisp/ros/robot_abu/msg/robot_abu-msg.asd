@@ -1,0 +1,21 @@
+
+(cl:in-package :asdf)
+
+(defsystem "robot_abu-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "accelerometer" :depends-on ("_package_accelerometer"))
+    (:file "_package_accelerometer" :depends-on ("_package"))
+    (:file "js" :depends-on ("_package_js"))
+    (:file "_package_js" :depends-on ("_package"))
+    (:file "mission" :depends-on ("_package_mission"))
+    (:file "_package_mission" :depends-on ("_package"))
+    (:file "msg_ke_stm" :depends-on ("_package_msg_ke_stm"))
+    (:file "_package_msg_ke_stm" :depends-on ("_package"))
+    (:file "sensors" :depends-on ("_package_sensors"))
+    (:file "_package_sensors" :depends-on ("_package"))
+    (:file "surface_to_laptop" :depends-on ("_package_surface_to_laptop"))
+    (:file "_package_surface_to_laptop" :depends-on ("_package"))
+    (:file "tuning" :depends-on ("_package_tuning"))
+    (:file "_package_tuning" :depends-on ("_package"))
+  ))

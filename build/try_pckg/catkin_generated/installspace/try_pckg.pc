@@ -1,0 +1,8 @@
+prefix=/home/adam/ITSRobocon/lidar_ta/install
+
+Name: try_pckg
+Description: Description of try_pckg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
