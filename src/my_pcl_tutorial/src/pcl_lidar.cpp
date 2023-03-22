@@ -15,6 +15,7 @@
 #include "geometry_msgs/TransformStamped.h"
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/static_transform_broadcaster.h"
+#include "ros_er/sensors.h"
 
 // initializating funtion
 int icp_init();
@@ -50,36 +51,72 @@ ros::Publisher pub_pcl, pub_pcl_lidar;
 ros::Subscriber sub_lidar, sub_odom;
 void callbacklidar(const sensor_msgs::LaserScan& msg_lidar);
 void callbackOdometry(const nav_msgs::Odometry& msg_odom);
+void callbackOdometryReal(const ros_er::sensors& msg_odom);
 sensor_msgs::PointCloud2 laserscan2pointcloud2(sensor_msgs::LaserScan laser_lidar_laserscan);
 pcl::PointCloud<pcl::PointXYZ> pointcloudtwo2pcl(sensor_msgs::PointCloud2 laser_lidar_pointcloud2);
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
+float robot_estimated_x = 0;
+float robot_estimated_y = 0;
+float robot_estimated_theta = 0;
+
 geometry_msgs::TransformStamped odom_trans;
 
-void callbackOdometry(const nav_msgs::Odometry::ConstPtr& msg_odom)
+void callbackOdometryReal(const ros_er::sensors& msg_odom)
 {
-    static tf2_ros::StaticTransformBroadcaster odom_broadcaster;
-    // std::cout<<msg_odom<<std::endl;
+
+    robot_estimated_x = msg_odom.global_pos_x*-0.001 + 11;
+    robot_estimated_y = msg_odom.global_pos_y*-0.001 + 0.4;
+    robot_estimated_theta = msg_odom.gyro * (M_PI/180);
+
+    static tf2_ros::TransformBroadcaster odom_broadcaster;
+    float z; // Change to radian
+    // std::cout<<" odom = " << msg_odom<<std::endl;
     odom_trans.header.frame_id = "base_link";
     odom_trans.header.stamp = ros::Time::now();
     odom_trans.child_frame_id = "laser";
 
-    odom_trans.transform.translation.x = msg_odom->pose.pose.position.x;
-    odom_trans.transform.translation.y = msg_odom->pose.pose.position.y;
-    odom_trans.transform.translation.z = msg_odom->pose.pose.position.z;
-
+    odom_trans.transform.translation.x = msg_odom.global_pos_x*-0.001 + 11;
+    odom_trans.transform.translation.y = msg_odom.global_pos_y*-0.001 + 0.4;
+    odom_trans.transform.translation.z = 0;
     tf2::Quaternion q;
-    q.setRPY(0,0,msg_odom->pose.pose.orientation.z);
+    z = msg_odom.gyro * (M_PI/180) - (M_PI/2);
+    q.setRPY(0,0,z);
     odom_trans.transform.rotation.x = q.x();
     odom_trans.transform.rotation.y = q.y();
     odom_trans.transform.rotation.z = q.z();
     odom_trans.transform.rotation.w = q.w();
 
 
-    // std::cout<<odom_trans<<std::endl;
+    // std::cout<<odom_trans<<std::endl;    
 
     odom_broadcaster.sendTransform(odom_trans);
 }
+
+// void callbackOdometry(const nav_msgs::Odometry::ConstPtr& msg_odom)
+// {
+//     static tf2_ros::TransformBroadcaster odom_broadcaster;
+//     // std::cout<<msg_odom<<std::endl;
+//     odom_trans.header.frame_id = "base_link";
+//     odom_trans.header.stamp = ros::Time::now();
+//     odom_trans.child_frame_id = "laser";
+
+//     odom_trans.transform.translation.x = msg_odom->pose.pose.position.x;
+//     odom_trans.transform.translation.y = msg_odom->pose.pose.position.y;
+//     odom_trans.transform.translation.z = msg_odom->pose.pose.position.z;
+
+//     tf2::Quaternion q;
+//     q.setRPY(0,0,msg_odom->pose.pose.orientation.z);
+//     odom_trans.transform.rotation.x = q.x();
+//     odom_trans.transform.rotation.y = q.y();
+//     odom_trans.transform.rotation.z = q.z();
+//     odom_trans.transform.rotation.w = q.w();
+
+
+//     // std::cout<<odom_trans<<std::endl;
+
+//     odom_broadcaster.sendTransform(odom_trans);
+// }
 
 // Field and Detection Point
 void field_points_init() // using for reference point cloud (0,0) until (12,0)
@@ -145,7 +182,7 @@ void callbacklidar(const sensor_msgs::LaserScan& msg_lidar)
         input_point.z = 0;
         detection_cloud->header.frame_id = "laser";
         detection_cloud->points.push_back(input_point);
-        std::cout<<*detection_cloud<<std::endl;
+        // std::cout<<*detection_cloud<<std::endl;
     }
 
     // std::    <<detection_cloud<<std::endl;
@@ -177,11 +214,11 @@ int main(int argc, char **argv) // Program Main
     ros::init(argc, argv, "icp_lidar");
 
     ros::NodeHandle nh;
-    ros::Rate rate(4);
-    pub_pcl = nh.advertise<PointCloud>("pub_pcl_pcl", 1);
-    pub_pcl_lidar = nh.advertise<PointCloud>("pub_pcl_lidar", 1);
-    sub_lidar = nh.subscribe("scan", 20, callbacklidar);
-    sub_odom = nh.subscribe("odom", 10, &callbackOdometry);
+    ros::Rate rate(100);
+    pub_pcl = nh.advertise<PointCloud>("pub_pcl_pcl", 10);
+    pub_pcl_lidar = nh.advertise<PointCloud>("pub_pcl_lidar", 10);
+    sub_lidar = nh.subscribe("scan", 20, &callbacklidar);
+    sub_odom = nh.subscribe("/sensor", 10, &callbackOdometryReal);
 
 
 
@@ -216,13 +253,14 @@ int main(int argc, char **argv) // Program Main
 
     while(ros::ok())
     {
+        // ROS_INFO("Debug");
         pcl_conversions::toPCL(ros::Time::now(), field_cloud->header.stamp);
         pcl_conversions::toPCL(ros::Time::now(), detection_cloud->header.stamp);
 
         pcl::IterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> icp;
         icp.setInputSource(detection_cloud);
         icp.setInputTarget(field_cloud);
-        icp.setMaximumIterations(100);
+        icp.setMaximumIterations(1);
 
         pcl::PointCloud<pcl::PointXYZ> Final;
         icp.align(Final);
@@ -231,12 +269,12 @@ int main(int argc, char **argv) // Program Main
         std::cout << icp.getFinalTransformation() << std::endl;
 
         // // Transform single point
-        // Eigen::Vector4f point(robot_estimated_x, robot_estimated_y, 0, 1);
-        // Eigen::Vector4f transformed_point = icp.getFinalTransformation() * point;
+        Eigen::Vector4f point(robot_estimated_x, robot_estimated_y, 0, 1);
+        Eigen::Vector4f transformed_point = icp.getFinalTransformation() * point;
 
         // // Print results
-        // std::cout << "Transformed point:" << std::endl;
-        // std::cout << transformed_point << std::endl;
+        std::cout << "Transformed point:" << std::endl;
+        std::cout << transformed_point << std::endl;
 
         pub_pcl.publish(*field_cloud);
         pub_pcl_lidar.publish(*detection_cloud);

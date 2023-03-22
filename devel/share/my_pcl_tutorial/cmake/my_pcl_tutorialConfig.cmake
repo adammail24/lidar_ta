@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(my_pcl_tutorial_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/adam/ITSRobocon/lidar_ta/devel/include;/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include " STREQUAL " ")
   set(my_pcl_tutorial_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/adam/ITSRobocon/lidar_ta/devel/include;/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT " " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "")
+set(libraries "my_pcl_tutorial")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(my_pcl_tutorial_EXPORTED_TARGETS "")
+set(my_pcl_tutorial_EXPORTED_TARGETS "my_pcl_tutorial_generate_messages_cpp;my_pcl_tutorial_generate_messages_eus;my_pcl_tutorial_generate_messages_lisp;my_pcl_tutorial_generate_messages_nodejs;my_pcl_tutorial_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${my_pcl_tutorial_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${my_pcl_tutorial_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "pcl_conversions;pcl_ros;roscpp;sensor_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(my_pcl_tutorial_EXPORTED_TARGETS ${${my_pcl_tutorial_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "my_pcl_tutorial-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${my_pcl_tutorial_DIR}/${extra})

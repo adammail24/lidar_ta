@@ -3,6 +3,6 @@ prefix=/home/adam/ITSRobocon/lidar_ta/install
 Name: my_pcl_tutorial
 Description: Description of my_pcl_tutorial
 Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmy_pcl_tutorial
+Requires: pcl_conversions pcl_ros roscpp sensor_msgs

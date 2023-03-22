@@ -6,5 +6,5 @@ CXX_FLAGS =     -std=c++14
 
 CXX_DEFINES = -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"my_pcl_tutorial\" -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL2)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
 
-CXX_INCLUDES = -I/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include -I/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include/my_pcl_tutorial -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2 
+CXX_INCLUDES = -I/home/adam/ITSRobocon/lidar_ta/devel/include -I/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include -I/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include/my_pcl_tutorial -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2 
 

@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/adam/ITSRobocon/lidar_ta/devel/include"
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
   "/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include"

@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/adam/ITSRobocon/lidar_ta/build/gtest/cmake_install.cmake")
-  include("/home/adam/ITSRobocon/lidar_ta/build/robot_abu/cmake_install.cmake")
+  include("/home/adam/ITSRobocon/lidar_ta/build/ros_er/cmake_install.cmake")
   include("/home/adam/ITSRobocon/lidar_ta/build/my_pcl_tutorial/cmake_install.cmake")
   include("/home/adam/ITSRobocon/lidar_ta/build/try_pckg/cmake_install.cmake")
   include("/home/adam/ITSRobocon/lidar_ta/build/learning_tf2/cmake_install.cmake")

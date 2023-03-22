@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/adam/ITSRobocon/lidar_ta/devel/include/ros_er/sensors.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/pcl_lidar.cpp
 pcl/registration/icp.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/pcl/registration/icp.h
@@ -41,6 +57,8 @@ tf2/LinearMath/Quaternion.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/tf2/LinearMath/Quaternion.h
 tf2_ros/static_transform_broadcaster.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/tf2_ros/static_transform_broadcaster.h
+ros_er/sensors.h
+/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/ros_er/sensors.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

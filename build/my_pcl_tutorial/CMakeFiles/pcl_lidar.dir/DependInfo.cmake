@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/adam/ITSRobocon/lidar_ta/devel/include"
   "/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include"
   "/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/include/my_pcl_tutorial"
   "/opt/ros/noetic/include"

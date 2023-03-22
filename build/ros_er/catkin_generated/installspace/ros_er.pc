@@ -1,0 +1,8 @@
+prefix=/home/adam/ITSRobocon/lidar_ta/install
+
+Name: ros_er
+Description: Description of ros_er
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lros_er
+Requires: roscpp rospy std_msgs message_runtime
