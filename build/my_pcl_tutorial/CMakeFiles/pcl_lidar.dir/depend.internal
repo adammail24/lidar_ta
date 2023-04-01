@@ -89,7 +89,10 @@ my_pcl_tutorial/CMakeFiles/pcl_lidar.dir/src/pcl_lidar.cpp.o
  /opt/ros/noetic/include/sensor_msgs/PointCloud.h
  /opt/ros/noetic/include/sensor_msgs/PointCloud2.h
  /opt/ros/noetic/include/sensor_msgs/PointField.h
+ /opt/ros/noetic/include/std_msgs/Float32MultiArray.h
  /opt/ros/noetic/include/std_msgs/Header.h
+ /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
+ /opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
  /opt/ros/noetic/include/tf/LinearMath/Matrix3x3.h
  /opt/ros/noetic/include/tf/LinearMath/Quaternion.h
  /opt/ros/noetic/include/tf/LinearMath/Transform.h

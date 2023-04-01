@@ -1,2 +1,2 @@
-learning_tf2:my_pcl_tutorial:ros_er:try_pckg:urg_node-kinetic-devel:visual_pckg
+learning_tf2:my_pcl_tutorial:ros_rr:try_pckg:urg_node-kinetic-devel:visual_pckg
 -DCATKIN_DEVEL_PREFIX=/home/adam/ITSRobocon/lidar_ta/devel -DCMAKE_INSTALL_PREFIX=/home/adam/ITSRobocon/lidar_ta/install -G Unix Makefiles

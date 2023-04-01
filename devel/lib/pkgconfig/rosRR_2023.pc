@@ -1,0 +1,8 @@
+prefix=/home/adam/ITSRobocon/lidar_ta/devel
+
+Name: rosRR_2023
+Description: Description of rosRR_2023
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

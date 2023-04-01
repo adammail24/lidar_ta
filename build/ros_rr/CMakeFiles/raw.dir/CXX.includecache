@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/include/test/raw_mode.h
+
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/test/raw_mode.cpp
+raw_mode.h
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/test/raw_mode.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+termios.h
+-
+unistd.h
+-
+

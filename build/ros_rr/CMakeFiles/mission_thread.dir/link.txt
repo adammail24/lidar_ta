@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libmission_thread.so -o /home/adam/ITSRobocon/lidar_ta/devel/lib/libmission_thread.so CMakeFiles/mission_thread.dir/src/main/mission_thread.cpp.o 
