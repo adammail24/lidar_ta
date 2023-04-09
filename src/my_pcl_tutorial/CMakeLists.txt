@@ -150,6 +150,7 @@ add_executable(my_icp_node src/my_icp_node.cpp)
 add_executable(pcl_tutorial src/pcl_tutorial.cpp)
 add_executable(pcl_lidar src/pcl_lidar.cpp)
 add_executable(pub_msg src/pub_msg.cpp)
+add_executable(icp_lidar_node src/icp_lidar.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -161,6 +162,8 @@ add_executable(pub_msg src/pub_msg.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(pcl_lidar ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(icp_lidar_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -186,6 +189,10 @@ target_link_libraries(pcl_lidar
 )
 
 target_link_libraries(pub_msg
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(icp_lidar_node
   ${catkin_LIBRARIES}
 )
 

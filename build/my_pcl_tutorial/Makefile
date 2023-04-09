@@ -228,6 +228,21 @@ my_pcl_tutorial_generate_messages_py/fast:
 .PHONY : my_pcl_tutorial_generate_messages_py/fast
 
 # Convenience name for target.
+my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/rule
+.PHONY : my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/rule
+
+# Convenience name for target.
+icp_lidar_node: my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/rule
+
+.PHONY : icp_lidar_node
+
+# fast build rule for target.
+icp_lidar_node/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build.make my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build
+.PHONY : icp_lidar_node/fast
+
+# Convenience name for target.
 my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_lisp.dir/rule:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_lisp.dir/rule
 .PHONY : my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_lisp.dir/rule
@@ -378,6 +393,21 @@ nav_msgs_generate_messages_lisp/fast:
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
 my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_nodejs.dir/rule:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_nodejs.dir/rule
 .PHONY : my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_generate_messages_nodejs.dir/rule
@@ -436,21 +466,6 @@ my_pcl_tutorial_genpy: my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_genpy.dir/rule
 my_pcl_tutorial_genpy/fast:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_genpy.dir/build.make my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_genpy.dir/build
 .PHONY : my_pcl_tutorial_genpy/fast
-
-# Convenience name for target.
-my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_pcl_tutorial/CMakeFiles/example.dir/rule:
@@ -538,6 +553,33 @@ src/example.s: src/example.cpp.s
 src/example.cpp.s:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/example.dir/build.make my_pcl_tutorial/CMakeFiles/example.dir/src/example.cpp.s
 .PHONY : src/example.cpp.s
+
+src/icp_lidar.o: src/icp_lidar.cpp.o
+
+.PHONY : src/icp_lidar.o
+
+# target to build an object file
+src/icp_lidar.cpp.o:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build.make my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/src/icp_lidar.cpp.o
+.PHONY : src/icp_lidar.cpp.o
+
+src/icp_lidar.i: src/icp_lidar.cpp.i
+
+.PHONY : src/icp_lidar.i
+
+# target to preprocess a source file
+src/icp_lidar.cpp.i:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build.make my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/src/icp_lidar.cpp.i
+.PHONY : src/icp_lidar.cpp.i
+
+src/icp_lidar.s: src/icp_lidar.cpp.s
+
+.PHONY : src/icp_lidar.s
+
+# target to generate assembly for a file
+src/icp_lidar.cpp.s:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build.make my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/src/icp_lidar.cpp.s
+.PHONY : src/icp_lidar.cpp.s
 
 src/my_icp.o: src/my_icp.cpp.o
 
@@ -684,6 +726,7 @@ help:
 	@echo "... my_pcl_tutorial_geneus"
 	@echo "... my_pcl_tutorial_generate_messages_eus"
 	@echo "... my_pcl_tutorial_generate_messages_py"
+	@echo "... icp_lidar_node"
 	@echo "... my_pcl_tutorial_generate_messages_lisp"
 	@echo "... my_icp"
 	@echo "... my_pcl_tutorial_genlisp"
@@ -696,12 +739,12 @@ help:
 	@echo "... my_pcl_tutorial_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... my_pcl_tutorial_generate_messages_nodejs"
 	@echo "... my_pcl_tutorial_gennodejs"
 	@echo "... my_pcl_tutorial_generate_messages"
 	@echo "... my_pcl_tutorial_genpy"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... install/local"
 	@echo "... example"
 	@echo "... my_icp_node"
 	@echo "... edit_cache"
@@ -713,6 +756,9 @@ help:
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"
+	@echo "... src/icp_lidar.o"
+	@echo "... src/icp_lidar.i"
+	@echo "... src/icp_lidar.s"
 	@echo "... src/my_icp.o"
 	@echo "... src/my_icp.i"
 	@echo "... src/my_icp.s"

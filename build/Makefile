@@ -1715,6 +1715,19 @@ my_pcl_tutorial_generate_messages_py/fast:
 .PHONY : my_pcl_tutorial_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named icp_lidar_node
+
+# Build rule for target.
+icp_lidar_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 icp_lidar_node
+.PHONY : icp_lidar_node
+
+# fast build rule for target.
+icp_lidar_node/fast:
+	$(MAKE) -f my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build.make my_pcl_tutorial/CMakeFiles/icp_lidar_node.dir/build
+.PHONY : icp_lidar_node/fast
+
+#=============================================================================
 # Target rules for targets named my_pcl_tutorial_generate_messages_lisp
 
 # Build rule for target.
@@ -1845,6 +1858,19 @@ nav_msgs_generate_messages_lisp/fast:
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_cpp
+
+# Build rule for target.
+nav_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named my_pcl_tutorial_generate_messages_nodejs
 
 # Build rule for target.
@@ -1895,19 +1921,6 @@ my_pcl_tutorial_genpy: cmake_check_build_system
 my_pcl_tutorial_genpy/fast:
 	$(MAKE) -f my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_genpy.dir/build.make my_pcl_tutorial/CMakeFiles/my_pcl_tutorial_genpy.dir/build
 .PHONY : my_pcl_tutorial_genpy/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_cpp
-
-# Build rule for target.
-nav_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make my_pcl_tutorial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named example
@@ -3081,6 +3094,7 @@ help:
 	@echo "... my_pcl_tutorial_geneus"
 	@echo "... my_pcl_tutorial_generate_messages_eus"
 	@echo "... my_pcl_tutorial_generate_messages_py"
+	@echo "... icp_lidar_node"
 	@echo "... my_pcl_tutorial_generate_messages_lisp"
 	@echo "... my_icp"
 	@echo "... my_pcl_tutorial_genlisp"
@@ -3091,11 +3105,11 @@ help:
 	@echo "... my_pcl_tutorial_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... my_pcl_tutorial_generate_messages_nodejs"
 	@echo "... my_pcl_tutorial_gennodejs"
 	@echo "... my_pcl_tutorial_generate_messages"
 	@echo "... my_pcl_tutorial_genpy"
-	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... example"
 	@echo "... my_icp_node"
 	@echo "... pcl_tutorial"
