@@ -45,6 +45,8 @@ terminal_colour.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/main/terminal_colour.h
 read_mission.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/main/read_mission.h
+rosRR_2023/lidar_aim.h
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/main/rosRR_2023/lidar_aim.h
 
 /opt/ros/noetic/include/geometry_msgs/Vector3.h
 string

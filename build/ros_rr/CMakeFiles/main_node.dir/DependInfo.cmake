@@ -17,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/adam/ITSRobocon/lidar_ta/devel/include"
   "/home/adam/ITSRobocon/lidar_ta/src/ros_rr/include"
   "/home/adam/ITSRobocon/lidar_ta/src/ros_rr/include/joystick"
   "/home/adam/ITSRobocon/lidar_ta/src/ros_rr/include/main"
@@ -35,6 +36,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/adam/ITSRobocon/lidar_ta/build/ros_rr/CMakeFiles/read_mission.dir/DependInfo.cmake"
   "/home/adam/ITSRobocon/lidar_ta/build/ros_rr/CMakeFiles/mission_start.dir/DependInfo.cmake"
   "/home/adam/ITSRobocon/lidar_ta/build/ros_rr/CMakeFiles/mission_thread.dir/DependInfo.cmake"
+  "/home/adam/ITSRobocon/lidar_ta/build/ros_rr/CMakeFiles/visual.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

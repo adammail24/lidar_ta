@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ros_rr/CMakeFiles/serial_node.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/serial_node.dir/rule
+.PHONY : ros_rr/CMakeFiles/serial_node.dir/rule
+
+# Convenience name for target.
+serial_node: ros_rr/CMakeFiles/serial_node.dir/rule
+
+.PHONY : serial_node
+
+# fast build rule for target.
+serial_node/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/serial_node.dir/build.make ros_rr/CMakeFiles/serial_node.dir/build
+.PHONY : serial_node/fast
+
+# Convenience name for target.
 ros_rr/CMakeFiles/lidar_node.dir/rule:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/lidar_node.dir/rule
 .PHONY : ros_rr/CMakeFiles/lidar_node.dir/rule
@@ -258,6 +273,21 @@ js_node/fast:
 .PHONY : js_node/fast
 
 # Convenience name for target.
+ros_rr/CMakeFiles/visual.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/visual.dir/rule
+.PHONY : ros_rr/CMakeFiles/visual.dir/rule
+
+# Convenience name for target.
+visual: ros_rr/CMakeFiles/visual.dir/rule
+
+.PHONY : visual
+
+# fast build rule for target.
+visual/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/visual.dir/build.make ros_rr/CMakeFiles/visual.dir/build
+.PHONY : visual/fast
+
+# Convenience name for target.
 ros_rr/CMakeFiles/read_mission.dir/rule:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/read_mission.dir/rule
 .PHONY : ros_rr/CMakeFiles/read_mission.dir/rule
@@ -271,6 +301,126 @@ read_mission: ros_rr/CMakeFiles/read_mission.dir/rule
 read_mission/fast:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/read_mission.dir/build.make ros_rr/CMakeFiles/read_mission.dir/build
 .PHONY : read_mission/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_genpy.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_genpy.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_genpy.dir/rule
+
+# Convenience name for target.
+rosRR_2023_genpy: ros_rr/CMakeFiles/rosRR_2023_genpy.dir/rule
+
+.PHONY : rosRR_2023_genpy
+
+# fast build rule for target.
+rosRR_2023_genpy/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_genpy.dir/build.make ros_rr/CMakeFiles/rosRR_2023_genpy.dir/build
+.PHONY : rosRR_2023_genpy/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages_py: ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/rule
+
+.PHONY : rosRR_2023_generate_messages_py
+
+# fast build rule for target.
+rosRR_2023_generate_messages_py/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages_py.dir/build
+.PHONY : rosRR_2023_generate_messages_py/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages_nodejs: ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/rule
+
+.PHONY : rosRR_2023_generate_messages_nodejs
+
+# fast build rule for target.
+rosRR_2023_generate_messages_nodejs/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages_nodejs.dir/build
+.PHONY : rosRR_2023_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/rule
+
+# Convenience name for target.
+rosRR_2023_genlisp: ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/rule
+
+.PHONY : rosRR_2023_genlisp
+
+# fast build rule for target.
+rosRR_2023_genlisp/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/build.make ros_rr/CMakeFiles/rosRR_2023_genlisp.dir/build
+.PHONY : rosRR_2023_genlisp/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages_lisp: ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/rule
+
+.PHONY : rosRR_2023_generate_messages_lisp
+
+# fast build rule for target.
+rosRR_2023_generate_messages_lisp/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages_lisp.dir/build
+.PHONY : rosRR_2023_generate_messages_lisp/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages_eus: ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/rule
+
+.PHONY : rosRR_2023_generate_messages_eus
+
+# fast build rule for target.
+rosRR_2023_generate_messages_eus/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages_eus.dir/build
+.PHONY : rosRR_2023_generate_messages_eus/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages_cpp: ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/rule
+
+.PHONY : rosRR_2023_generate_messages_cpp
+
+# fast build rule for target.
+rosRR_2023_generate_messages_cpp/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages_cpp.dir/build
+.PHONY : rosRR_2023_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/rule
+
+# Convenience name for target.
+rosRR_2023_generate_messages: ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/rule
+
+.PHONY : rosRR_2023_generate_messages
+
+# fast build rule for target.
+rosRR_2023_generate_messages/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/build.make ros_rr/CMakeFiles/rosRR_2023_generate_messages.dir/build
+.PHONY : rosRR_2023_generate_messages/fast
 
 # Convenience name for target.
 ros_rr/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
@@ -1098,6 +1248,21 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/rule
+
+# Convenience name for target.
+rosRR_2023_gennodejs: ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/rule
+
+.PHONY : rosRR_2023_gennodejs
+
+# fast build rule for target.
+rosRR_2023_gennodejs/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/build.make ros_rr/CMakeFiles/rosRR_2023_gennodejs.dir/build
+.PHONY : rosRR_2023_gennodejs/fast
+
+# Convenience name for target.
 ros_rr/CMakeFiles/pcl_ros_gencfg.dir/rule:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/pcl_ros_gencfg.dir/rule
 .PHONY : ros_rr/CMakeFiles/pcl_ros_gencfg.dir/rule
@@ -1111,6 +1276,21 @@ pcl_ros_gencfg: ros_rr/CMakeFiles/pcl_ros_gencfg.dir/rule
 pcl_ros_gencfg/fast:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/pcl_ros_gencfg.dir/build.make ros_rr/CMakeFiles/pcl_ros_gencfg.dir/build
 .PHONY : pcl_ros_gencfg/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/rule
+.PHONY : ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/rule
+
+# Convenience name for target.
+_rosRR_2023_generate_messages_check_deps_lidar_aim: ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/rule
+
+.PHONY : _rosRR_2023_generate_messages_check_deps_lidar_aim
+
+# fast build rule for target.
+_rosRR_2023_generate_messages_check_deps_lidar_aim/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/build.make ros_rr/CMakeFiles/_rosRR_2023_generate_messages_check_deps_lidar_aim.dir/build
+.PHONY : _rosRR_2023_generate_messages_check_deps_lidar_aim/fast
 
 # Convenience name for target.
 ros_rr/CMakeFiles/tf_generate_messages_eus.dir/rule:
@@ -1246,6 +1426,21 @@ dynamic_reconfigure_generate_messages_cpp: ros_rr/CMakeFiles/dynamic_reconfigure
 dynamic_reconfigure_generate_messages_cpp/fast:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make ros_rr/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/rule
+
+# Convenience name for target.
+rosRR_2023_gencpp: ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/rule
+
+.PHONY : rosRR_2023_gencpp
+
+# fast build rule for target.
+rosRR_2023_gencpp/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/build.make ros_rr/CMakeFiles/rosRR_2023_gencpp.dir/build
+.PHONY : rosRR_2023_gencpp/fast
 
 # Convenience name for target.
 ros_rr/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
@@ -1411,6 +1606,21 @@ nodelet_generate_messages_lisp: ros_rr/CMakeFiles/nodelet_generate_messages_lisp
 nodelet_generate_messages_lisp/fast:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make ros_rr/CMakeFiles/nodelet_generate_messages_lisp.dir/build
 .PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
+ros_rr/CMakeFiles/rosRR_2023_geneus.dir/rule:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f CMakeFiles/Makefile2 ros_rr/CMakeFiles/rosRR_2023_geneus.dir/rule
+.PHONY : ros_rr/CMakeFiles/rosRR_2023_geneus.dir/rule
+
+# Convenience name for target.
+rosRR_2023_geneus: ros_rr/CMakeFiles/rosRR_2023_geneus.dir/rule
+
+.PHONY : rosRR_2023_geneus
+
+# fast build rule for target.
+rosRR_2023_geneus/fast:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/rosRR_2023_geneus.dir/build.make ros_rr/CMakeFiles/rosRR_2023_geneus.dir/build
+.PHONY : rosRR_2023_geneus/fast
 
 # Convenience name for target.
 ros_rr/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
@@ -1736,6 +1946,33 @@ src/main/read_mission.cpp.s:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/read_mission.dir/build.make ros_rr/CMakeFiles/read_mission.dir/src/main/read_mission.cpp.s
 .PHONY : src/main/read_mission.cpp.s
 
+src/main/visualisation.o: src/main/visualisation.cpp.o
+
+.PHONY : src/main/visualisation.o
+
+# target to build an object file
+src/main/visualisation.cpp.o:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/visual.dir/build.make ros_rr/CMakeFiles/visual.dir/src/main/visualisation.cpp.o
+.PHONY : src/main/visualisation.cpp.o
+
+src/main/visualisation.i: src/main/visualisation.cpp.i
+
+.PHONY : src/main/visualisation.i
+
+# target to preprocess a source file
+src/main/visualisation.cpp.i:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/visual.dir/build.make ros_rr/CMakeFiles/visual.dir/src/main/visualisation.cpp.i
+.PHONY : src/main/visualisation.cpp.i
+
+src/main/visualisation.s: src/main/visualisation.cpp.s
+
+.PHONY : src/main/visualisation.s
+
+# target to generate assembly for a file
+src/main/visualisation.cpp.s:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/visual.dir/build.make ros_rr/CMakeFiles/visual.dir/src/main/visualisation.cpp.s
+.PHONY : src/main/visualisation.cpp.s
+
 src/stm/ethernet.o: src/stm/ethernet.cpp.o
 
 .PHONY : src/stm/ethernet.o
@@ -1925,6 +2162,33 @@ src/test/topic_sensor.cpp.s:
 	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/sensor.dir/build.make ros_rr/CMakeFiles/sensor.dir/src/test/topic_sensor.cpp.s
 .PHONY : src/test/topic_sensor.cpp.s
 
+src/usb/serial_node.o: src/usb/serial_node.cpp.o
+
+.PHONY : src/usb/serial_node.o
+
+# target to build an object file
+src/usb/serial_node.cpp.o:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/serial_node.dir/build.make ros_rr/CMakeFiles/serial_node.dir/src/usb/serial_node.cpp.o
+.PHONY : src/usb/serial_node.cpp.o
+
+src/usb/serial_node.i: src/usb/serial_node.cpp.i
+
+.PHONY : src/usb/serial_node.i
+
+# target to preprocess a source file
+src/usb/serial_node.cpp.i:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/serial_node.dir/build.make ros_rr/CMakeFiles/serial_node.dir/src/usb/serial_node.cpp.i
+.PHONY : src/usb/serial_node.cpp.i
+
+src/usb/serial_node.s: src/usb/serial_node.cpp.s
+
+.PHONY : src/usb/serial_node.s
+
+# target to generate assembly for a file
+src/usb/serial_node.cpp.s:
+	cd /home/adam/ITSRobocon/lidar_ta/build && $(MAKE) -f ros_rr/CMakeFiles/serial_node.dir/build.make ros_rr/CMakeFiles/serial_node.dir/src/usb/serial_node.cpp.s
+.PHONY : src/usb/serial_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1935,14 +2199,24 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
+	@echo "... serial_node"
 	@echo "... lidar_node"
 	@echo "... raw"
 	@echo "... test_node"
 	@echo "... js"
 	@echo "... read_file"
 	@echo "... js_node"
+	@echo "... rebuild_cache"
+	@echo "... visual"
 	@echo "... read_mission"
+	@echo "... rosRR_2023_genpy"
+	@echo "... rosRR_2023_generate_messages_py"
+	@echo "... rosRR_2023_generate_messages_nodejs"
+	@echo "... rosRR_2023_genlisp"
+	@echo "... rosRR_2023_generate_messages_lisp"
+	@echo "... rosRR_2023_generate_messages_eus"
+	@echo "... rosRR_2023_generate_messages_cpp"
+	@echo "... rosRR_2023_generate_messages"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
@@ -2000,7 +2274,9 @@ help:
 	@echo "... net"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosRR_2023_gennodejs"
 	@echo "... pcl_ros_gencfg"
+	@echo "... _rosRR_2023_generate_messages_check_deps_lidar_aim"
 	@echo "... tf_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -2010,6 +2286,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... rosRR_2023_gencpp"
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
@@ -2021,6 +2298,7 @@ help:
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_lisp"
+	@echo "... rosRR_2023_geneus"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... stm_node"
@@ -2051,6 +2329,9 @@ help:
 	@echo "... src/main/read_mission.o"
 	@echo "... src/main/read_mission.i"
 	@echo "... src/main/read_mission.s"
+	@echo "... src/main/visualisation.o"
+	@echo "... src/main/visualisation.i"
+	@echo "... src/main/visualisation.s"
 	@echo "... src/stm/ethernet.o"
 	@echo "... src/stm/ethernet.i"
 	@echo "... src/stm/ethernet.s"
@@ -2072,6 +2353,9 @@ help:
 	@echo "... src/test/topic_sensor.o"
 	@echo "... src/test/topic_sensor.i"
 	@echo "... src/test/topic_sensor.s"
+	@echo "... src/usb/serial_node.o"
+	@echo "... src/usb/serial_node.i"
+	@echo "... src/usb/serial_node.s"
 .PHONY : help
 
 

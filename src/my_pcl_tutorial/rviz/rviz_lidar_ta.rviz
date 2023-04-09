@@ -13,6 +13,7 @@ Panels:
         - /PointCloud22
         - /PointCloud22/Status1
         - /Axes1
+        - /MarkerArray1
       Splitter Ratio: 0.5
     Tree Height: 719
   - Class: rviz/Selection
@@ -151,6 +152,14 @@ Visualization Manager:
       Reference Frame: laser
       Show Trail: false
       Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /field_marker
+      Name: MarkerArray
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -179,7 +188,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 13.257094383239746
+      Distance: 12.692594528198242
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -187,9 +196,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.4285005331039429
-        Y: 1.6626745462417603
-        Z: 3.0478217601776123
+        X: 1.961192011833191
+        Y: 2.108389377593994
+        Z: 3.59257173538208
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false

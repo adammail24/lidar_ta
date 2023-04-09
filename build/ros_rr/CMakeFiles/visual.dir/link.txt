@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libvisual.so -o /home/adam/ITSRobocon/lidar_ta/devel/lib/libvisual.so CMakeFiles/visual.dir/src/main/visualisation.cpp.o 

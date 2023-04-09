@@ -82,6 +82,7 @@ main_node_EXTERNAL_OBJECTS =
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /home/adam/ITSRobocon/lidar_ta/devel/lib/libread_mission.so
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /home/adam/ITSRobocon/lidar_ta/devel/lib/libmission_start.so
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /home/adam/ITSRobocon/lidar_ta/devel/lib/libmission_thread.so
+/home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /home/adam/ITSRobocon/lidar_ta/devel/lib/libvisual.so
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /opt/ros/noetic/lib/libpcl_ros_filter.so
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /opt/ros/noetic/lib/libpcl_ros_tf.so
 /home/adam/ITSRobocon/lidar_ta/devel/lib/rosRR_2023/main_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so

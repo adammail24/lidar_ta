@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/adam/ITSRobocon/lidar_ta/devel/include/ros_er/sensors.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/pcl_lidar.cpp
 pcl/registration/icp.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/pcl/registration/icp.h
@@ -59,8 +43,8 @@ tf2_ros/static_transform_broadcaster.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/tf2_ros/static_transform_broadcaster.h
 std_msgs/Float32MultiArray.h
 /home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/std_msgs/Float32MultiArray.h
-ros_er/sensors.h
-/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/ros_er/sensors.h
+geometry_msgs/Pose2D.h
+/home/adam/ITSRobocon/lidar_ta/src/my_pcl_tutorial/src/geometry_msgs/Pose2D.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
@@ -132,6 +116,22 @@ ros/message_operations.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
+-
+
+/opt/ros/noetic/include/geometry_msgs/Pose2D.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/PoseStamped.h

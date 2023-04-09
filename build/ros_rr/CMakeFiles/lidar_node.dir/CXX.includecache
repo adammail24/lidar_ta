@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/include/main/mission_defines.h
+
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/lidar.cpp
 ros/ros.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/ros/ros.h
@@ -17,6 +19,10 @@ geometry_msgs/Point32.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/geometry_msgs/Point32.h
 std_msgs/Float32MultiArray.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/std_msgs/Float32MultiArray.h
+rosRR_2023/lidar_aim.h
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/rosRR_2023/lidar_aim.h
+mission_defines.h
+/home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/mission_defines.h
 pcl/io/pcd_io.h
 /home/adam/ITSRobocon/lidar_ta/src/ros_rr/src/lidar/pcl/io/pcd_io.h
 pcl/point_types.h

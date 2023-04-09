@@ -63,6 +63,9 @@ ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/s
 ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_msgs/Int8MultiArray.h
 ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
 ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
+ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_srvs/Trigger.h
+ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_srvs/TriggerRequest.h
+ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/std_srvs/TriggerResponse.h
 ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 

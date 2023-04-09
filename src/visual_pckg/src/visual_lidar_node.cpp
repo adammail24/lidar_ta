@@ -99,7 +99,7 @@ void add_field(float x, float y, float z, float d_x, float d_y, float color_r, f
 {
     visualization_msgs::Marker m_pole;
 
-    m_pole.header.frame_id = "world";
+    m_pole.header.frame_id = "base_link";
     m_pole.header.stamp = ros::Time::now();
     m_pole.ns = "field";
     m_pole.id = id;
@@ -141,7 +141,7 @@ void add_bevel(float x, float y, float z, float d_x, float d_y, int id)
 {
     visualization_msgs::Marker m_pole;
 
-    m_pole.header.frame_id = "world";
+    m_pole.header.frame_id = "base_link";
     m_pole.header.stamp = ros::Time::now();
     m_pole.ns = "field";
     m_pole.id = id;
@@ -182,7 +182,7 @@ void add_cube(float x, float y, float z, float d_x, float d_y, float d_z, float 
 {
     visualization_msgs::Marker m_pole;
 
-    m_pole.header.frame_id = "world";
+    m_pole.header.frame_id = "base_link";
     m_pole.header.stamp = ros::Time::now();
     m_pole.ns = "field";
     m_pole.id = id;
@@ -224,7 +224,7 @@ void add_line_field_strip(float x1, float y1, float x2, float y2, int id)
     visualization_msgs::Marker m_pole;
     int i=0;
 
-    m_pole.header.frame_id = "world";
+    m_pole.header.frame_id = "base_link";
     m_pole.header.stamp = ros::Time::now();
     m_pole.ns = "field";
     m_pole.id = id;

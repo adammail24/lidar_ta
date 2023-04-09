@@ -1,2 +1,0 @@
-set(ros_er_MESSAGE_FILES "/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/js.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/mission.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/sensors.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/msg_ke_stm.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/accelerometer.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/tuning.msg;/home/adam/ITSRobocon/lidar_ta/src/ros_er/msg/surface_to_laptop.msg")
-set(ros_er_SERVICE_FILES "/home/adam/ITSRobocon/lidar_ta/src/ros_er/srv/commands_srv.srv")

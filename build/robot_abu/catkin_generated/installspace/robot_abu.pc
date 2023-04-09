@@ -1,8 +1,0 @@
-prefix=/home/adam/ITSRobocon/lidar_ta/install
-
-Name: robot_abu
-Description: Description of robot_abu
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lrobot_abu
-Requires: roscpp rospy std_msgs message_runtime

@@ -64,5 +64,8 @@ ros_rr/CMakeFiles/stm_node.dir/src/stm/stm_node.cpp.o
  /opt/ros/noetic/include/std_msgs/Int8MultiArray.h
  /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
  /opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
+ /opt/ros/noetic/include/std_srvs/Trigger.h
+ /opt/ros/noetic/include/std_srvs/TriggerRequest.h
+ /opt/ros/noetic/include/std_srvs/TriggerResponse.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h

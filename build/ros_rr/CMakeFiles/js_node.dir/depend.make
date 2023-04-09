@@ -68,6 +68,9 @@ ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/
 ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/SetBool.h
 ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/SetBoolRequest.h
 ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/SetBoolResponse.h
+ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/Trigger.h
+ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/TriggerRequest.h
+ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/std_srvs/TriggerResponse.h
 ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ros_rr/CMakeFiles/js_node.dir/src/joystick/joystick_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 

@@ -7,6 +7,7 @@
 subdirs("gtest")
 subdirs("ros_rr")
 subdirs("my_pcl_tutorial")
+subdirs("robot_pose_ekf")
 subdirs("try_pckg")
 subdirs("learning_tf2")
 subdirs("urg_node-kinetic-devel")
